@@ -12,12 +12,6 @@
           box-sizing: border-box;
 }
 
-.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .board {
   width: 100vw;
   height: 100vh;
@@ -198,4 +192,10 @@
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

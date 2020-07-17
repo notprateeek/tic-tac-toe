@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-.show {
-  display: flex;
-}
-
 .board {
   width: 100vw;
   height: 100vh;
@@ -192,4 +188,8 @@
       transition: 0.3s ease-in-out;
     }
   }
+}
+
+.show {
+  display: flex;
 }
