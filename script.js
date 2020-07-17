@@ -13,13 +13,13 @@ const wins = [
 const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.querySelector('.board');
 const result = document.querySelector('.result');
-const restartBtn = document.querySelector('.restart-Btn');
 const message = document.querySelector('.message');
+const restartBtn = document.querySelector('.restart-btn');
 let circleTurn;
 
 startGame();
 
-restartButton.addEventListener('click', startGame);
+restartBtn.addEventListener('click', startGame);
 
 function startGame() {
   circleTurn = false;
@@ -44,7 +44,7 @@ function handleClick(e) {
     endGame(true);
   } else {
     swapTurns();
-    setBoardHoverClass();
+    setBoard();
   }
 }
 
@@ -71,9 +71,9 @@ function swapTurns() {
   circleTurn = !circleTurn;
 }
 
-function setBoardHoverClass() {
-  board.classList.remove(xClass);
+function setBoard() {
   board.classList.remove(oClass);
+  board.classList.remove(xClass);
   if (circleTurn) {
     board.classList.add(oClass);
   } else {

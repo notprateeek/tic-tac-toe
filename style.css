@@ -171,6 +171,7 @@
 .result .restart-btn {
   font-family: 'poppins', sans-serif;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .result .message {
