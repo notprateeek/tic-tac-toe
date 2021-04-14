@@ -171,13 +171,15 @@
   }
 
   .message {
-    font-size: 5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .restart-btn {
+    margin-top: 0.5rem;
     background: none;
     border: 0.5px solid #d3d3d3;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 7px 21px;
     border-radius: 10px;
     cursor: pointer;
@@ -192,4 +194,46 @@
 
 .show {
   display: flex;
+}
+
+@media only screen and (min-width: 480px) and(min-height: 480px) {
+  .result {
+    .message {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .restart-btn {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and(min-height: 768px) {
+  .result {
+    .message {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .restart-btn {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and(min-height: 1024px) {
+  .result {
+    .message {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .restart-btn {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+    }
+  }
 }
